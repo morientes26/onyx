@@ -1,5 +1,5 @@
-from Activity.Main.MainActivity import MainActivity
-from Context.UIContext import UIContext
+from activity.Main.MainActivity import MainActivity
+from input.ui_driver.UIContext import UIContext
 
 
 def main():

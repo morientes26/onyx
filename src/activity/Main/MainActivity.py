@@ -1,6 +1,6 @@
-from Activity.AbstractActivity import AbstractActivity
-from Activity.UC1.UC1Activity import UC1Activity
-from Context.Main.MainActivityContext import MainActivityContext
+from activity.AbstractActivity import AbstractActivity
+from activity.UC1.UC1Activity import UC1Activity
+from activity.Main.MainActivityContext import MainActivityContext
 
 
 class MainActivity(AbstractActivity):
