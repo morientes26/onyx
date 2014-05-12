@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set PYTHONPATH=.
+set PYTHONPATH=./src
 export PYTHONPATH
 
 PATTERN="test*.py"
@@ -9,7 +9,7 @@ echo ""
 echo "-------------------- UNIT TESTS -------------------------"
 echo "-- run all test: without parameter                     --"
 echo "-- run one test: module.testclass                      --"
-echo "--         for example: tests.Activity.testUC1Activity --"
+echo "--         for example: test.Activity.testUC1Activity --"
 echo "---------------------------------------------------------"
 echo ""
 

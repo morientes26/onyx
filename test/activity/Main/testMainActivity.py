@@ -1,8 +1,10 @@
 import unittest
-from Activity.Main.MainActivity import MainActivity
-from Context.Main.MainActivityContext import MainActivityContext
-from Activity.UC1.UC1Activity import UC1Activity
-from Context.UIContext import UIContext
+from activity.Main.MainActivity import MainActivity
+from activity.Main.MainActivityContext import MainActivityContext
+from activity.UC1.UC1Activity import UC1Activity
+from input.ui_driver.UIContext import UIContext
+
+__author__ = 'morientes'
 
 
 class TestMainActivity(unittest.TestCase):

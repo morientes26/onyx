@@ -1,5 +1,9 @@
 from activity.AbstractActivity import AbstractActivity
 from activity.UC1.UC1ActivityContext import UC1ActivityContext
+from activity.UC1.UC1RenderedData import UC1RenderedData
+from activity.UC1.UC1DomainData import UC1DomainData
+
+__author__ = 'morientes'
 
 
 class UC1Activity(AbstractActivity):
@@ -9,6 +13,7 @@ class UC1Activity(AbstractActivity):
     def __init__(self):
         super(AbstractActivity, self).__init__()
         self.activities = None
+        self.domain_data = UC1DomainData()
 
     def get_activity(self, context):
         #this activite do not return any activity
@@ -23,3 +28,11 @@ class UC1Activity(AbstractActivity):
         print('--- Proccess [UC1Activity] ---')
         print(context)
         print('Printing x, y points ... [' + str(context.x) + ', ' + str(context.y) + '] ... done')
+
+        self.domain_data.invalidate()
+
+    def render(self, data):
+        #TODO:12-5-14:morientes - implementovat. Zatial len provizorne tranformovanie dat
+        #NOTE:12-5-14:morientes - Tu mi nie je jasne ako sa premnia domenove data na render data !!!
+        uc1_rendered_data = UC1RenderedData()
+        return uc1_rendered_data

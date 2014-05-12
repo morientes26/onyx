@@ -1,7 +1,9 @@
 import unittest
-from Context.UC1.UC1ActivityContext import UC1ActivityContext
-from Activity.UC1.UC1Activity import UC1Activity
-from Context.UIContext import UIContext
+from activity.UC1.UC1ActivityContext import UC1ActivityContext
+from activity.UC1.UC1Activity import UC1Activity
+from input.ui_driver.UIContext import UIContext
+
+__author__ = 'morientes'
 
 
 class TestUC1Activity(unittest.TestCase):
