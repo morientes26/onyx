@@ -1,0 +1,14 @@
+from Activity.Main.MainActivity import MainActivity
+from Context.UIContext import UIContext
+
+
+def main():
+    print("Testing UC1...")
+    ui_context = UIContext("onClick", 12, 32, "UC1")
+
+    # ui_context bude vracat event vstupneho drivera
+    print(ui_context)
+
+    MainActivity().proccess(ui_context)
+
+if  __name__ =='__main__':main()
